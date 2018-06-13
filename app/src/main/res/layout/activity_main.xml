@@ -1,0 +1,470 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_2">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal">
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/Team_name_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center_horizontal"
+                android:padding="16dp"
+                android:text="Home"
+
+
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/Team_A"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal"
+
+                android:gravity="center"
+                android:src="@drawable/team_1_1" />
+
+            <TextView
+                android:id="@+id/team_a_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-Light"
+                android:gravity="center_horizontal"
+                android:paddingBottom="10dp"
+                android:text="0"
+                android:textColor="@android:color/white"
+                android:textSize="56sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/shot" />
+
+                <TextView
+                    android:id="@+id/home_shots"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:text="0"
+                    android:textColor="@android:color/white"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/post" />
+
+                <TextView
+                    android:id="@+id/home_ontarg"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+
+                    android:text="0"
+                    android:textColor="@android:color/white"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/wistles" />
+
+                <TextView
+                    android:id="@+id/home_fouls"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:text="0"
+                    android:textColor="@android:color/white"
+
+
+                    />
+
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/card" />
+
+                <TextView
+                    android:id="@+id/home_bookings"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:text="0"
+                    android:textColor="@android:color/white"
+
+
+                    />
+
+
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/button1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="24dp"
+                        android:onClick="goalHome"
+                        android:text="Goal!"
+
+                        android:textColor="@android:color/white" />
+
+                    <Button
+                        android:id="@+id/button8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="24dp"
+                        android:onClick="shotsByHome"
+
+                        android:text="Shots"
+                        android:textColor="@android:color/white" />
+
+                    <Button
+                        android:id="@+id/button9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="24dp"
+                        android:onClick="ontargetByHome"
+                        android:text="on target"
+
+                        android:textColor="@android:color/white" />
+
+                    <Button
+                        android:id="@+id/button2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="24dp"
+                        android:onClick="foulByHome"
+
+                        android:text="Foul!"
+                        android:textColor="@android:color/white" />
+
+                    <Button
+                        android:id="@+id/button3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="24dp"
+
+                        android:onClick="bookingByHome"
+                        android:text="Yellow/Red Card"
+                        android:textColor="@android:color/white" />
+
+                </LinearLayout>
+            </ScrollView>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="140dp"
+            android:background="@android:color/black">
+
+        </View>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/Team_name_A"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center_horizontal"
+                android:padding="16dp"
+                android:text="AWAY"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/Team_B"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:src="@drawable/team_1_1" />
+
+            <TextView
+                android:id="@+id/team_b_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-Light"
+                android:gravity="center_horizontal"
+                android:paddingBottom="10dp"
+                android:text="0"
+
+                android:textColor="@android:color/white"
+                android:textSize="56sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/shot" />
+
+                <TextView
+                    android:id="@+id/away_shots"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:text="0"
+
+                    android:textColor="@android:color/white"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/post" />
+
+                <TextView
+                    android:id="@+id/away_ontarg"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:text="0"
+
+                    android:textColor="@android:color/white"
+
+                    />
+
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/wistles" />
+
+                <TextView
+                    android:id="@+id/away_fouls"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+
+                    android:layout_weight="1"
+                    android:text="0"
+                    android:textColor="@android:color/white"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/card" />
+
+                <TextView
+                    android:id="@+id/away_bookings"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:text="0"
+                    android:textColor="@android:color/white"
+
+
+                    />
+
+
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/button4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="24dp"
+
+                        android:onClick="goalAway"
+                        android:text="Goal!"
+                        android:textColor="@android:color/white" />
+
+                    <Button
+                        android:id="@+id/button10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="24dp"
+                        android:onClick="shotsByAway"
+                        android:text="Shots"
+
+                        android:textColor="@android:color/white" />
+
+                    <Button
+                        android:id="@+id/button11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="24dp"
+                        android:onClick="ontargetByAway"
+
+                        android:text="On target"
+                        android:textColor="@android:color/white" />
+
+                    <Button
+                        android:id="@+id/button5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="24dp"
+                        android:onClick="foulByAway"
+                        android:text="Foul!"
+
+                        android:textColor="@android:color/white" />
+
+                    <Button
+                        android:id="@+id/button6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="24dp"
+                        android:onClick="bookingByAway"
+                        android:text="Yellow/Red Card"
+
+                        android:textColor="@android:color/white" />
+
+
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+
+        android:onClick="resetScore"
+        android:text="Reset"
+        android:textColor="@android:color/white">
+
+    </Button>
+
+    <Button
+        android:id="@+id/Submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="76dp"
+        android:onClick="submit"
+        android:text="Submit"
+        android:textColor="@android:color/background_light" />
+
+    <Button
+        android:id="@+id/Score_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Score Card"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>

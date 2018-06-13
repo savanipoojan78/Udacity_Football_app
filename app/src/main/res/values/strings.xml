@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Football Counter</string>
+    <string name="vs">V/S</string>
+    <string name="letplay">Let\'s Play!</string>
+    <string name="ss">"Select Team"</string>
+
+
+        <string name="team_1_1">"Russia"</string>
+        <string name="team_1_2">"Saudi Arabia"</string>
+        <string name="team_1_3">"Egypt"</string>
+        <string name="team_1_4">"Uruguay"</string>
+
+
+
+    <string name="team_2_1">"Portugal"</string>
+    <string name="team_2_2">"Spain"</string>
+    <string name="team_2_3">"Morocco"</string>
+    <string name="team_2_4">"Iran"</string>
+    <string name="team_3_1">"France"</string>
+    <string name="team_3_2">"Australia"</string>
+    <string name="team_3_3">"Peru"</string>
+    <string name="team_3_4">"Denmark"</string>
+    <string name="team_4_1">"Argentina"</string>
+    <string name="team_4_2">"Iceland"</string>
+    <string name="team_4_3">"Croatia"</string>
+    <string name="team_4_4">"Nigeria"</string>
+    <string name="team_5_1">"Brazil"</string>
+    <string name="team_5_3">"Costa Rica"</string>
+    <string name="team_5_2">"Switzerland"</string>
+    <string name="team_5_4">"Serbis"</string>
+    <string name="team_6_1">"Germany"</string>
+    <string name="team_6_2">"Mexico"</string>
+    <string name="team_6_3">"Sweden"</string>
+    <string name="team_6_4">"South Korea"</string>
+    <string name="team_7_1">"Belgium"</string>
+    <string name="team_7_2">"Panama"</string>
+    <string name="team_7_3">"Tunisia"</string>
+    <string name="team_7_4">"England"</string>
+    <string name="team_8_1">"Poland"</string>
+    <string name="team_8_2">"Senegal"</string>
+    <string name="team_8_3">"Colombia"</string>
+    <string name="team_8_4">"Japan"</string>
+
+
+</resources>
