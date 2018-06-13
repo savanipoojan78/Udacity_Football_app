@@ -93,38 +93,38 @@ public class SelecteTeamActivity extends AppCompatActivity {
 
     private void initList() {
         mCountryList = new ArrayList<>();
+        mCountryList.add(new CountryItem(getString(R.string.team_4_1), R.drawable.team_4_1));
+        mCountryList.add(new CountryItem(getString(R.string.team_3_2), R.drawable.team_3_2));
+        mCountryList.add(new CountryItem(getString(R.string.team_7_1), R.drawable.team_7_1));
+        mCountryList.add(new CountryItem(getString(R.string.team_5_1), R.drawable.team_5_1));
+        mCountryList.add(new CountryItem(getString(R.string.team_8_3), R.drawable.team_8_3));
+        mCountryList.add(new CountryItem(getString(R.string.team_4_3), R.drawable.team_4_3));
+        mCountryList.add(new CountryItem(getString(R.string.team_5_3), R.drawable.team_5_3));
+        mCountryList.add(new CountryItem(getString(R.string.team_3_4), R.drawable.team_3_4));
+        mCountryList.add(new CountryItem(getString(R.string.team_7_4), R.drawable.team_7_4));
+        mCountryList.add(new CountryItem(getString(R.string.team_3_1), R.drawable.team_3_1));
+        mCountryList.add(new CountryItem(getString(R.string.team_1_3), R.drawable.team_1_3));
+        mCountryList.add(new CountryItem(getString(R.string.team_6_1), R.drawable.team_6_1));
+        mCountryList.add(new CountryItem(getString(R.string.team_2_4), R.drawable.team_2_4));
+        mCountryList.add(new CountryItem(getString(R.string.team_4_2), R.drawable.team_4_2));
+        mCountryList.add(new CountryItem(getString(R.string.team_8_4), R.drawable.team_8_4));
+        mCountryList.add(new CountryItem(getString(R.string.team_6_2), R.drawable.team_6_2));
+        mCountryList.add(new CountryItem(getString(R.string.team_2_3), R.drawable.team_2_3));
+        mCountryList.add(new CountryItem(getString(R.string.team_4_4), R.drawable.team_4_4));
+        mCountryList.add(new CountryItem(getString(R.string.team_7_2), R.drawable.team_7_2));
+        mCountryList.add(new CountryItem(getString(R.string.team_3_3), R.drawable.team_3_3));
+        mCountryList.add(new CountryItem(getString(R.string.team_8_1), R.drawable.team_8_1));
+        mCountryList.add(new CountryItem(getString(R.string.team_2_1), R.drawable.team_2_1));
         mCountryList.add(new CountryItem(getString(R.string.team_1_1), R.drawable.team_1_1));
         mCountryList.add(new CountryItem(getString(R.string.team_1_2), R.drawable.team_1_2));
-        mCountryList.add(new CountryItem(getString(R.string.team_1_3), R.drawable.team_1_3));
-        mCountryList.add(new CountryItem(getString(R.string.team_1_4), R.drawable.team_1_4));
-        mCountryList.add(new CountryItem(getString(R.string.team_2_1), R.drawable.team_2_1));
-        mCountryList.add(new CountryItem(getString(R.string.team_2_2), R.drawable.team_2_2));
-        mCountryList.add(new CountryItem(getString(R.string.team_2_3), R.drawable.team_2_3));
-        mCountryList.add(new CountryItem(getString(R.string.team_2_4), R.drawable.team_2_4));
-        mCountryList.add(new CountryItem(getString(R.string.team_3_1), R.drawable.team_3_1));
-        mCountryList.add(new CountryItem(getString(R.string.team_3_2), R.drawable.team_3_2));
-        mCountryList.add(new CountryItem(getString(R.string.team_3_3), R.drawable.team_3_3));
-        mCountryList.add(new CountryItem(getString(R.string.team_3_4), R.drawable.team_3_4));
-        mCountryList.add(new CountryItem(getString(R.string.team_4_1), R.drawable.team_4_1));
-        mCountryList.add(new CountryItem(getString(R.string.team_4_2), R.drawable.team_4_2));
-        mCountryList.add(new CountryItem(getString(R.string.team_4_3), R.drawable.team_4_3));
-        mCountryList.add(new CountryItem(getString(R.string.team_4_4), R.drawable.team_4_4));
-        mCountryList.add(new CountryItem(getString(R.string.team_5_1), R.drawable.team_5_1));
-        mCountryList.add(new CountryItem(getString(R.string.team_5_2), R.drawable.team_5_2));
-        mCountryList.add(new CountryItem(getString(R.string.team_5_3), R.drawable.team_5_3));
-        mCountryList.add(new CountryItem(getString(R.string.team_5_4), R.drawable.team_5_4));
-        mCountryList.add(new CountryItem(getString(R.string.team_6_1), R.drawable.team_6_1));
-        mCountryList.add(new CountryItem(getString(R.string.team_6_2), R.drawable.team_6_2));
-        mCountryList.add(new CountryItem(getString(R.string.team_6_3), R.drawable.team_6_3));
-        mCountryList.add(new CountryItem(getString(R.string.team_6_4), R.drawable.team_6_4));
-        mCountryList.add(new CountryItem(getString(R.string.team_7_1), R.drawable.team_7_1));
-        mCountryList.add(new CountryItem(getString(R.string.team_7_2), R.drawable.team_7_2));
-        mCountryList.add(new CountryItem(getString(R.string.team_7_3), R.drawable.team_7_3));
-        mCountryList.add(new CountryItem(getString(R.string.team_7_4), R.drawable.team_7_4));
-        mCountryList.add(new CountryItem(getString(R.string.team_8_1), R.drawable.team_8_1));
         mCountryList.add(new CountryItem(getString(R.string.team_8_2), R.drawable.team_8_2));
-        mCountryList.add(new CountryItem(getString(R.string.team_8_3), R.drawable.team_8_3));
-        mCountryList.add(new CountryItem(getString(R.string.team_8_4), R.drawable.team_8_4));
+        mCountryList.add(new CountryItem(getString(R.string.team_5_4), R.drawable.team_5_4));
+        mCountryList.add(new CountryItem(getString(R.string.team_6_4), R.drawable.team_6_4));
+        mCountryList.add(new CountryItem(getString(R.string.team_2_2), R.drawable.team_2_2));
+        mCountryList.add(new CountryItem(getString(R.string.team_6_3), R.drawable.team_6_3));
+        mCountryList.add(new CountryItem(getString(R.string.team_5_2), R.drawable.team_5_2));
+        mCountryList.add(new CountryItem(getString(R.string.team_7_3), R.drawable.team_7_3));
+        mCountryList.add(new CountryItem(getString(R.string.team_1_4), R.drawable.team_1_4));
     }
 
 
