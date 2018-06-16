@@ -17,7 +17,7 @@ import java.util.ArrayList;
 public class SelecteTeamActivity extends AppCompatActivity {
     private ArrayList<CountryItem> mCountryList;
     private CountryAdapter mAdapter;
-    TextView letsplay;
+    TextView letsPlay;
     private Window mWindow;
 
     String clickedCountryName1,clickedCountryName2;
@@ -31,7 +31,7 @@ public class SelecteTeamActivity extends AppCompatActivity {
                 View.SYSTEM_UI_FLAG_LAYOUT_STABLE
                         | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN);
 
-        letsplay=(TextView)findViewById(R.id.letsplay);
+        letsPlay=(TextView)findViewById(R.id.letsplay);
         initList();
 
         Spinner spinnerCountries1 = findViewById(R.id.spinner_countries);
@@ -40,7 +40,7 @@ public class SelecteTeamActivity extends AppCompatActivity {
         mAdapter = new CountryAdapter(this, mCountryList);
         spinnerCountries1.setAdapter(mAdapter);
         spinnerCountries2.setAdapter(mAdapter);
-
+        //Display all The Iteam That Are In the First spinner
         spinnerCountries1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
@@ -56,6 +56,7 @@ public class SelecteTeamActivity extends AppCompatActivity {
 
             }
         });
+        //Display all The Iteam That Are In the Second spinner
         spinnerCountries2.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
@@ -70,7 +71,8 @@ public class SelecteTeamActivity extends AppCompatActivity {
 
             }
         });
-        letsplay.setOnClickListener(new View.OnClickListener() {
+        //when the Let's Play Clicked the Two Selected Team With Name Goto To The Another Activity Called The MainActivity Which Contain The Main portion Of the Progrm
+        letsPlay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if(clickedCountryName1.equals(clickedCountryName2))
@@ -90,6 +92,7 @@ public class SelecteTeamActivity extends AppCompatActivity {
             }
         });
     }
+    //Add the team into the custom spinner
 
     private void initList() {
         mCountryList = new ArrayList<>();
